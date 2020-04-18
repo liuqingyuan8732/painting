@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*正常的未被访问过的链接*/
+
+a:link {
+    text-decoration: none;
+}
+
+
+/*已经访问过的链接*/
+
+a:visited {
+    text-decoration: none;
+}
+
+
+/*鼠标划过(停留)的链接*/
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* 正在点击的链接*/
+
+a:active {
+    text-decoration: none;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+body {
+    width: 100vw;
+    background-color: rgb(245, 245, 245);
+    font-size: 16px;
+}
+
+
+/********************自定义样式**********************/
+
+.header {
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(255, 227, 223);
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+.header_container {
+    width: 80vw;
+    /* background-color: seagreen; */
+}
+
+.logo_img {
+    width: 110px;
+}
+
+.painting_name {
+    opacity: 0.5;
+    font-size: 30px;
+    text-align: end;
+}
+
+.pain_search {
+    padding-top: 10px;
+}
+
+.pain_search input {
+    border: none;
+    height: 30px;
+    opacity: 0.8;
+    background-color: #ccc;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.pain_search input::placeholder {
+    opacity: 0.6;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.pain_search button {
+    border: none;
+    height: 30px;
+    width: 60px;
+    background-color: #ccc;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.login_register {
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.login_register a {
+    color: rgb(252, 67, 73);
+    /*鼠标触摸改变样式*/
+    cursor: pointer;
+}
+
+.login_register button {
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 35px;
+    background: #ec414d;
+    color: #fff;
+    box-shadow: none;
+    border: 1px solid #ec414d;
+    border-radius: 2px;
+}
+
+.login_register .user_img {
+    height: 50px;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+}
+
+.login_register .user_img:hover .user_center {
+    opacity: 1;
+}
+
+.user_img img {
+    width: 30px;
+    height: 30px;
+}
+
+.user_img span {
+    font-size: 14px;
+}
+
+.user_center {
+    text-align: left;
+    opacity: 0;
+    position: absolute;
+    width: 180px;
+    right: -6px;
+    top: 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 2px 1px #ccc;
+    transition: 1s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    z-index: 100;
+}
+
+.user_center ul li:first-child {
+    padding-top: 20px;
+}
+
+.user_center ul li {
+    padding: 0 15px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.user_center ul li:hover {
+    color: rgb(201, 0, 0);
+}
+
+.user_center ul li i {
+    margin-right: 5px;
+}
+
+.user_center ul li:last-child {
+    border-top: 1px solid #ccc;
+}
+
+
+/* 导航栏 */
+
+.pain_nav {
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 5px 1px #ccc;
+    margin: 20px 0;
+}
+
+.pain_nav div {
+    font-size: 14px;
+    cursor: pointer;
+    line-height: 60px;
+}
+
+.pain_nav div:hover {
+    color: rgb(201, 0, 0);
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 240px 240px 240px 240px 240px 240px;
+    gap: 15px;
+    align-content: center;
+    justify-content: center;
+}
+
+.content_item {
+    background-color: rgb(255, 255, 255);
+    height: 350px;
+    display: grid;
+    grid-template-columns: 215px;
+    align-content: center;
+    gap: 5px;
+    justify-content: center;
+    box-shadow: 0 0 2px 1px #ccc;
+    transform: bottom 0.2s linear 0s;
+    border-radius: 5px;
+}
+
+.content_item:hover {
+    box-shadow: 0 0 5px 1px #ccc;
+    position: relative;
+    bottom: 2px;
+}
+
+.imgmax {
+    width: 100%;
+    height: 210px;
+}
+
+.img_list {
+    display: grid;
+    height: 70px;
+    grid-template-columns: 70px 70px 70px;
+    align-items: center;
+    justify-items: center;
+    gap: 3px;
+}
+
+.img_list img {
+    height: 70px;
+    width: 100%;
+}
+
+.attention_list {
+    padding-top: 10px;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 10px;
+}
+
+.attention_list span:first-child {
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgb(237, 237, 237);
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.attention_list span:last-child {
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: rgb(254, 254, 254);
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.attention_list span:hover {
+    background-color: rgb(217, 217, 217);
+}
+
+
+/* @media screen and (min-width:768px) and (max-width:992px) {
+    .box {
+        width: 95vw;
+        height: 100vh;
+    }
+} */
